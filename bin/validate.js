@@ -246,7 +246,7 @@ vendors.vendors.forEach((v) => {
         if (endDevice.photos.other) {
           endDevice.photos.other.forEach((p) => {
             requireImageDecode(`${folder}/${p}`)
-              .then(() => console.log(`${key}: ${endDevice.photos.main} is valid`))
+              .then(() => console.log(`${key}: ${p} is valid`))
               .catch((err) => {
                 console.error(err);
                 process.exit(1);
